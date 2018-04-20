@@ -10,6 +10,7 @@ public class CustomLoginCallback implements LoginCallback{
 		System.out.println(session.getAccountDetails().toString());
 		
 		session.start();
+		
 	}
 	
 	@Override

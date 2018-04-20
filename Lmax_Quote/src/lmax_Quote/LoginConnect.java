@@ -1,6 +1,7 @@
 package lmax_Quote;
 
 import java.io.IOException;
+
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -28,10 +29,8 @@ public class LoginConnect {
 			
 			lmaxApi.login(new LoginRequest(username, password, LoginRequest.ProductType.CFD_DEMO), new CustomLoginCallback(){ 
 			
-			
 			});
 			
-		
 		}catch(IOException e) {
 			e.printStackTrace();
 			System.out.println("Cannot loaded config file");
